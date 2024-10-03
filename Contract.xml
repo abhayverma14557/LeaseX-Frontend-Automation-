@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Contract Test Suite" parallel="methods" thread-count="3" data-provider-thread-count="3"
+       skipfailedinvocationcounts="true">
+    <listeners>
+        <listener class-name="TestComponents.Listners"/>
+    </listeners>
+    <parameter name="excel_Sheet" value="Contract"/>
+
+    <test name="Contract">
+
+        <parameter name="test_param" value="Cont-001"/>
+        <classes>
+            <class name="Test.Contract.ContractCreation"/>
+        </classes>
+    </test>
+</suite>

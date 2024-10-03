@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Store Test Suite</th></tr>
+<tr><td><a href="#t0">Property</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">91,887</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Store Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Property &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Test.Store.StoreCreationFlow</td><td><a href="#m0">createStoreFlow</a></td><td rowspan="2">1727956362237</td><td rowspan="2">16835</td></tr><tr class="failedeven"><td><a href="#m1">createStoreFlow</a></td></tr><tr><th colspan="4">Property &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Test.Store.StoreCreationFlow</td><td><a href="#m2">createStoreFlow</a></td><td rowspan="1">1727956386709</td><td rowspan="1">20437</td></tr></tbody>
+</table>
+<h2>Property</h2><h3 id="m0">Test.Store.StoreCreationFlow#createStoreFlow</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>{test_Scenario=Verify Lessee Registration with Valid Input, store_CostCenter=TestStoreCenter, company_Code=MNDACNT220005, store_Name=Test Store, userName=sunil.gaur@myndsol.com, test_Name=verify Store creation, property_To_Search=Ashoka Mall, password=Mynd@2022, store_Addrs_Title=Test Address 1, case_Type=Positive, property_To_Approve=Ashoka Mall, store_ErpCode=12312312, portal=Mynd Lease products, property_To_Add=Ashoka Mall, remarks=Test Remarks, test_Id=Store-001, menu_Option=Store}</td><td>org.testng.TestRunner@6668ddbf</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ccac9b71295e5806856a0d3d32b8f202, getElementText {id=f.DEA2C30F921D5AE809D23326B9145F9D.d.AFBEC54811056F4905DFAFE84A71335C.e.281}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64453/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ccac9b71295e5806856a0d3d32b8f202)] -&gt; xpath: //div[@class=&apos;ms-3&apos;]/strong]
+Session ID: ccac9b71295e5806856a0d3d32b8f202
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at PageObjects.StorePage.selectPropertyToApprove(StorePage.java:131)
+	at Test.Store.StoreCreationFlow.createStoreFlow(StoreCreationFlow.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Test.Store.StoreCreationFlow#createStoreFlow</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>{test_Scenario=Verify Lessee Registration with Valid Input, store_CostCenter=TestStoreCenter, company_Code=MNDACNT220005, store_Name=Test Store, userName=sunil.gaur@myndsol.com, test_Name=verify Store creation, property_To_Search=null, password=Mynd@2022, store_Addrs_Title=Test Address 1, case_Type=Positive, property_To_Approve=null, store_ErpCode=12312312, portal=Mynd Lease products, property_To_Add=null, remarks=Test Remarks, test_Id=Store-001, menu_Option=Store}</td><td>org.testng.TestRunner@6668ddbf</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-ng-cli-universal-c80=&quot;&quot; type=&quot;button&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#SaveMsg&quot; class=&quot;btn btn-primary&quot; style=&quot;margin-right: 5px;&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1418, 601). Other element would receive the click: &lt;div _ngcontent-ng-cli-universal-c80=&quot;&quot; class=&quot;col-12 py-3&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.70)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff6af9963d4a816a53418aea4afc2d0b, clickElement {id=f.C1A5BCB6CBE38A72EB0D399387B39C98.d.451F26155D90B292730F4DA16C2748CB.e.239}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64694/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ff6af9963d4a816a53418aea4afc2d0b)] -&gt; xpath: //button[contains(text(),&apos;Associate&apos;)]]
+Session ID: ff6af9963d4a816a53418aea4afc2d0b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at PageObjects.StorePage.clickAssociateBtn(StorePage.java:124)
+	at Test.Store.StoreCreationFlow.createStoreFlow(StoreCreationFlow.java:49)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Test.Store.StoreCreationFlow#createStoreFlow</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>{test_Scenario=Verify Lessee Registration with Valid Input, store_CostCenter=null, company_Code=MNDACNT220005, store_Name=null, userName=sunil.gaur@myndsol.com, test_Name=verify Store creation, property_To_Search=Ashoka Mall, password=Mynd@2022, store_Addrs_Title=Test Address 1, case_Type=Positive, property_To_Approve=Ashoka Mall, store_ErpCode=null, portal=Mynd Lease products, property_To_Add=Ashoka Mall, remarks=Test Remarks, test_Id=Store-001, menu_Option=Store}</td><td>org.testng.TestRunner@6668ddbf</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

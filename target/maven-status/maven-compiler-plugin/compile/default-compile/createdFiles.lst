@@ -1,0 +1,14 @@
+PageObjects\ContractPage.class
+PageObjects\LessorPage.class
+PageObjects\PropertyPage.class
+PageObjects\ServiceProviderPage.class
+CommonFiles\AbstractComponents.class
+PageObjects\LesseePage.class
+PageObjects\SalesPage.class
+PageObjects\LoginPage.class
+PageObjects\DashboardPage.class
+PageObjects\PortalSelectionPage.class
+PageObjects\PoPage.class
+PageObjects\StorePage.class
+PageObjects\InvoicePage.class
+PageObjects\MrnPage.class

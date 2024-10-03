@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LeaseX Login Test Cases Suite" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="TestComponents.Listners"/>
+    </listeners>
+    <parameter name="excel_Sheet" value="LeaseX_Login"/>
+    <test name="LoginFlow">
+        <parameter name="test_param" value="LOGIN-001"/>
+        <classes>
+            <class name="Test.Login.LeaseXLogin"/>
+        </classes>
+    </test>
+
+    <!--    <test name="LoginWithoutCompanyCode">-->
+    <!--        <parameter name="test_param" value="LOGIN-002" />-->
+    <!--        <classes>-->
+    <!--            <class name="Test.Login.LoginWithoutCompanyCode"/>-->
+
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+    <!--    <test name="InvalidCredVerification">-->
+    <!--        <parameter name="test_param" value="LOGIN-003" />-->
+
+    <!--        <classes>-->
+    <!--            <class name="Test.Login.InvalidCredVerification"/>-->
+
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+    <!--    <test name="PassEncryptDcrpyt">-->
+    <!--        <parameter name="test_param" value="LOGIN-004" />-->
+
+    <!--        <classes>-->
+    <!--            <class name="Test.Login.PassEncryptDecrypt"/>-->
+
+    <!--        </classes>-->
+
+    <!--    </test>-->
+
+
+    <!--    <test name="FieldErrorMsgs">-->
+    <!--        <parameter name="test_param" value="LOGIN-005" />-->
+    <!--          <classes>-->
+    <!--            <class name="Test.Login.FieldErrorMsgs"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+</suite>

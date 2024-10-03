@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Property Test Suite" parallel="methods" thread-count="3" data-provider-thread-count="3"
+       skipfailedinvocationcounts="true">
+    <listeners>
+        <listener class-name="TestComponents.Listners"/>
+    </listeners>
+    <parameter name="excel_Sheet" value="Property"/>
+
+    <test name="Property">
+
+        <parameter name="test_param" value="Prop-001"/>
+        <classes>
+            <class name="Test.Property.PropertyCreation"/>
+        </classes>
+    </test>
+</suite>
