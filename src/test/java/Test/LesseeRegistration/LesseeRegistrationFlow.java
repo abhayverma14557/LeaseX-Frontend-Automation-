@@ -193,7 +193,7 @@ public class LesseeRegistrationFlow extends BaseClass {
 
             }
 
-            //-------------------------------------Lessee Compliance Gst Form Handling----------------------------------------------------
+            //-------------------------------------Lessee Compliance Gst Form Handling-------------------------------------------------------
             if(actual_Comp_Msg.isEmpty()) {
                 lesseePageObj.clickAddButton();
                 if (input.get("gst_Status") != null) {

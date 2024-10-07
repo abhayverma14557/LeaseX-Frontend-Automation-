@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>TestNG:  LessorRegTestCase1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LessorRegTestCase1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 07 16:26:13 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>298 seconds (298307 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.LessorRegistration.LessorRegistrationFlow.lessorRegistrationFlow()'><b>lessorRegistrationFlow</b><br>Test class: Test.LessorRegistration.LessorRegistrationFlow<br>Parameters: {gst_Number=29GGGGG1314R9Z6, =null, country=India, lessor_Site_Id=null, account_Number=57483920121, edited_Contact_Person_Name=null, payout=MG, lessor_Site_Name=null, address_Type2=PROPERTY, msme_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, cheque_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, password=Mynd@2022, address_Type3=SITE, lessor_Email=TestVendor@yopmail.com, TDS_Component=Common Area Maintenance, state=Bihar, portal=Mynd Lease products, gst_State=Delhi, pincode=123456, msme_Registration_Number=UDYAM-XY-07-1234567, bank_Name=Bank of India, cin_Number=1234567890, company_Code=MNDACNT220005, account_Holder_Name=Test Person, e_Invoice=true, test_Name=Verify Registration of Lessor, contact_Email=TestVendorNew2@yopmail.com, edited_Mobile_Number=null, pan_Number=BYVPV0861K, address_Line1=Test Address1, address_Line2=Test Address2, test_Id=Lessor_REG-001, menu_Option=Lessor, erp_Code=1234567890, test_Scenario=Verify TDS Tab Fields on Blank Input Tab and Verifying Error Messages, msme_Option= Small , gst_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, city=Patna - Gaya, bank_Branch=Mall Road, lessor_Name=Bank Details Lessor, gst_Status=Composition, gst_Country=India, msme_Exp_Date=12-12-2025, bank_Account_Type=Current, ifsc_Code=MAHB0012333, lessor_Type=Private Company, userName=sunil.gaur@myndsol.com, TDS_Code=IJ- Sec 194I-Inv.COM-Rent Property 10%, edited_Contact_Email=null, pan_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, address_Type=CORPORATE, case_Type=Negative, mobile_Number=7897891234, contact_Person_Name=Test Contact, remarks=null}, org.testng.TestRunner@5db03589</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;Data save successfully&apos;) to be present in element [[ChromeDriver: chrome on windows (2143436b22b267672411515f4d632758)] -&gt; css selector: #toast-container] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53035}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53035/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2143436b22b267672411515f4d632758
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at CommonFiles.AbstractComponents.waitforTextinElement(AbstractComponents.java:108)
+	at CommonFiles.AbstractComponents.getToastMessage(AbstractComponents.java:278)
+	at Test.LessorRegistration.LessorRegistrationFlow.lessorRegistrationFlow(LessorRegistrationFlow.java:322)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373254173", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1373254173'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;Data save successfully&apos;) to be present in element [[ChromeDriver: chrome on windows (2143436b22b267672411515f4d632758)] -&gt; css selector: #toast-container] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53035}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53035/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2143436b22b267672411515f4d632758
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at CommonFiles.AbstractComponents.waitforTextinElement(AbstractComponents.java:108)
+	at CommonFiles.AbstractComponents.getToastMessage(AbstractComponents.java:278)
+	at Test.LessorRegistration.LessorRegistrationFlow.lessorRegistrationFlow(LessorRegistrationFlow.java:322)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>97</td>
+<td>Test.LessorRegistration.LessorRegistrationFlow@6d763516</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.LessorRegistration.LessorRegistrationFlow.lessorRegistrationFlow()'><b>lessorRegistrationFlow</b><br>Test class: Test.LessorRegistration.LessorRegistrationFlow<br>Parameters: {gst_Number=29GGGGG1314R9Z6, =null, country=India, lessor_Site_Id=12345676, account_Number=null, edited_Contact_Person_Name=null, payout=null, lessor_Site_Name=null, address_Type2=PROPERTY, msme_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, cheque_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, password=Mynd@2022, address_Type3=SITE, lessor_Email=TestVendor@yopmail.com, TDS_Component=Common Area Maintenance, state=Bihar, portal=Mynd Lease products, gst_State=Bihar, pincode=123456, msme_Registration_Number=UDYAM-XY-07-1234567, bank_Name=null, cin_Number=1234567890, company_Code=MNDACNT220005, account_Holder_Name=null, e_Invoice=true, test_Name=Verify Registration of Lessor, contact_Email=TestVendorNew2@yopmail.com, edited_Mobile_Number=null, pan_Number=BYVPV0861K, address_Line1=Test Address1, address_Line2=Test Address2, test_Id=Lessor_REG-001, menu_Option=Lessor, erp_Code=1234567890, test_Scenario=Verify Bank Tab Fields on Blank Input Tab and Verifying Error Messages, msme_Option= Small , gst_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, city=Patna - Gaya, bank_Branch=null, lessor_Name=Test Vendor, gst_Status=Composition, gst_Country=India, msme_Exp_Date=12-12-2025, bank_Account_Type=null, ifsc_Code=null, lessor_Type=Private Company, userName=sunil.gaur@myndsol.com, TDS_Code=IJ- Sec 194I-Inv.COM-Rent Property 10%, edited_Contact_Email=null, pan_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, address_Type=CORPORATE, case_Type=Negative, mobile_Number=7897891234, contact_Person_Name=Test Contact, remarks=Test Remarks}, org.testng.TestRunner@5db03589</td>
+<td></td>
+<td>82</td>
+<td>Test.LessorRegistration.LessorRegistrationFlow@6d763516</td></tr>
+<tr>
+<td title='Test.LessorRegistration.LessorRegistrationFlow.lessorRegistrationFlow()'><b>lessorRegistrationFlow</b><br>Test class: Test.LessorRegistration.LessorRegistrationFlow<br>Parameters: {gst_Number=29GGGGG1314R9Z6, =null, country=India, lessor_Site_Id=null, account_Number=9878978989, edited_Contact_Person_Name=null, payout=MG, lessor_Site_Name=null, address_Type2=PROPERTY, msme_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, cheque_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, password=Mynd@2022, address_Type3=SITE, lessor_Email=TestVendor@yopmail.com, TDS_Component=null, state=Bihar, portal=Mynd Lease products, gst_State=Delhi, pincode=123456, msme_Registration_Number=UDYAM-XY-07-1234567, bank_Name=Bank of India, cin_Number=1234567890, company_Code=MNDACNT220005, account_Holder_Name=*(&*(&*(, e_Invoice=true, test_Name=Verify Registration of Lessor, contact_Email=TestVendorNew2@yopmail.com, edited_Mobile_Number=null, pan_Number=BYVPV0861K, address_Line1=Test Address1, address_Line2=Test Address2, test_Id=Lessor_REG-001, menu_Option=Lessor, erp_Code=1234567890, test_Scenario=Verify Bank Tab Fields on Invalid Input Tab and Verifying Error Messages, msme_Option= Small , gst_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, city=Patna - Gaya, bank_Branch=Mall Road, lessor_Name=Test Vendor, gst_Status=Composition, gst_Country=India, msme_Exp_Date=12-12-2025, bank_Account_Type=Current, ifsc_Code=MAH(*&(*, lessor_Type=Private Company, userName=sunil.gaur@myndsol.com, TDS_Code=null, edited_Contact_Email=null, pan_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, address_Type=CORPORATE, case_Type=Negative, mobile_Number=7897891234, contact_Person_Name=Test Contact, remarks=null}, org.testng.TestRunner@5db03589</td>
+<td></td>
+<td>85</td>
+<td>Test.LessorRegistration.LessorRegistrationFlow@6d763516</td></tr>
+</table><p>
+</body>
+</html>

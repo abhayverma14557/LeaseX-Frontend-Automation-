@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>TestNG:  Property</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Property</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 07 15:38:58 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>151 seconds (151318 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.LesseeRegistration.LesseeRegistrationFlow.lesseeRegistrationFlow()'><b>lesseeRegistrationFlow</b><br>Test class: Test.LesseeRegistration.LesseeRegistrationFlow<br>Parameters: {gst_Number=29GGGGG1314R9Z6, =null, country=India, account_Number=57483920121, edited_Contact_Person_Name=null, payout=CAM, lessee_Type=null, address_Type2=PROPERTY, msme_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, cheque_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, password=Mynd@2022, address_Type3=SITE, TDS_Component=Common Area Maintenance, lessee_Email=null, state=Bihar, portal=Mynd Lease products, gst_State=Delhi, pincode=123456, msme_Registration_Number=UDYAM-XY-07-1234567, bank_Name=Bank of India, cin_Number=123456789, company_Code=MNDACNT220005, account_Holder_Name=Test Person, e_Invoice=true, test_Name=Lessee Registration, contact_Email=TestVendorNew2@yopmail.com, edited_Mobile_Number=null, pan_Number=BYVPV0861K, address_Line1=Test Address1, address_Line2=Test Address2, test_Id=Lessee_REG-001, menu_Option=Lessee, erp_Code=null, test_Scenario=Verify Lessee Registration with Valid Input, msme_Option= Small , gst_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, city=Patna - Gaya, adhar_Card_File=\src\main\java\Resources\sample-pan-card-front.jpg, bank_Branch=Mall Road, lessee_Name=null, gst_Status=Composition, gst_Country=India, gst_Declaration_File=\src\main\java\Resources\sample-pan-card-front.jpg, bank_Account_Type=Current, ifsc_Code=MAHB0012333, userName=sunil.gaur@myndsol.com, TDS_Code=IJ- Sec 194I-Inv.COM-Rent Property 10%, edited_Contact_Email=null, pan_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, lessee_Site_Id=12345676, address_Type=CORPORATE, case_Type=Positive, mobile_Number=7897891234, lessee_Site_Name=Test Vendor on Site, contact_Person_Name=Test Contact, remarks=Test Remarks}, org.testng.TestRunner@c65d7c3</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Basic Fields Error Messages Assertion Failed expected [true] but found [false]
+	at Test.LesseeRegistration.LesseeRegistrationFlow.lesseeRegistrationFlow(LesseeRegistrationFlow.java:401)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1426828409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1426828409'><pre>java.lang.AssertionError: The following asserts failed:
+	Basic Fields Error Messages Assertion Failed expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test.LesseeRegistration.LesseeRegistrationFlow.lesseeRegistrationFlow(LesseeRegistrationFlow.java:401)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>39</td>
+<td>Test.LesseeRegistration.LesseeRegistrationFlow@6d763516</td></tr>
+<tr>
+<td title='Test.LesseeRegistration.LesseeRegistrationFlow.lesseeRegistrationFlow()'><b>lesseeRegistrationFlow</b><br>Test class: Test.LesseeRegistration.LesseeRegistrationFlow<br>Parameters: {gst_Number=29GGGGG1314R9Z6, =null, country=India, account_Number=57483920121, edited_Contact_Person_Name=null, payout=CAM, lessee_Type=Private Company, address_Type2=PROPERTY, msme_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, cheque_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, password=Mynd@2022, address_Type3=SITE, TDS_Component=null, lessee_Email=TestVendor@yopmail.com, state=Bihar, portal=Mynd Lease products, gst_State=Delhi, pincode=123456, msme_Registration_Number=UDYAM-XY-07-1234567, bank_Name=Bank of India, cin_Number=123456789, company_Code=MNDACNT220005, account_Holder_Name=Test Person, e_Invoice=true, test_Name=Lessee Registration, contact_Email=TestVendorNew2@yopmail.com, edited_Mobile_Number=null, pan_Number=BYVPV0861K, address_Line1=Test Address1, address_Line2=Test Address2, test_Id=Lessee_REG-001, menu_Option=Lessee, erp_Code=123456789, test_Scenario=Verify Lessee Registration with Valid Input, msme_Option= Small , gst_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, city=Patna - Gaya, adhar_Card_File=\src\main\java\Resources\sample-pan-card-front.jpg, bank_Branch=Mall Road, lessee_Name=Test Vendor, gst_Status=Composition, gst_Country=India, gst_Declaration_File=\src\main\java\Resources\sample-pan-card-front.jpg, bank_Account_Type=Current, ifsc_Code=MAHB0012333, userName=sunil.gaur@myndsol.com, TDS_Code=null, edited_Contact_Email=null, pan_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, lessee_Site_Id=12345676, address_Type=CORPORATE, case_Type=Positive, mobile_Number=7897891234, lessee_Site_Name=Test Vendor on Site, contact_Person_Name=Test Contact, remarks=Test Remarks}, org.testng.TestRunner@c65d7c3</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	TDS Fields Error Messages Assertion Failed expected [true] but found [false]
+	at Test.LesseeRegistration.LesseeRegistrationFlow.lesseeRegistrationFlow(LesseeRegistrationFlow.java:401)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1350788200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1350788200'><pre>java.lang.AssertionError: The following asserts failed:
+	TDS Fields Error Messages Assertion Failed expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Test.LesseeRegistration.LesseeRegistrationFlow.lesseeRegistrationFlow(LesseeRegistrationFlow.java:401)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>87</td>
+<td>Test.LesseeRegistration.LesseeRegistrationFlow@6d763516</td></tr>
+</table><p>
+</body>
+</html>
