@@ -34,7 +34,7 @@ public class LessorPage extends AbstractComponents {
     private List<WebElement> lessor_Steps_Elmnts;
 
 
-    //Basic Tab Locators
+    //----------------------------------------------------Basic Tab Locators------------------------------------------------------------
 
     @FindBy(xpath = "//input[@placeholder='Enter Name']")
     private WebElement lessor_Name_Elmnt;
@@ -54,11 +54,12 @@ public class LessorPage extends AbstractComponents {
     @FindBy(xpath = "//li[contains(text(),'Address')]")
     private WebElement addressTab_Btn;
 
+    @FindBy(xpath = "//span[contains(@class,'text-danger')]/div")
+    private List<WebElement> basic_Fields_Err_Elmt;
 
-    //Address Tab Locators
+    //-----------------------------------------------------Address Tab Locators----------------------------------------------------------------
 
-    @FindBy(xpath = "//button[contains(text(),'Add')]")
-    private WebElement addBtnElmnt;
+
 
     @FindBy(xpath = "//select[@formcontrolname='address_type']")
     private WebElement addressTypeElmnt;
@@ -96,7 +97,7 @@ public class LessorPage extends AbstractComponents {
     private List<WebElement> add_List_Elmnts;
 
 
-    //Contact Person Tab Locator
+    //----------------------------------------------------Contact Person Tab Locator----------------------------------------------------
 
 
     @FindBy(xpath = "//input[@formcontrolname='name']")
@@ -339,11 +340,20 @@ public class LessorPage extends AbstractComponents {
         addressTab_Btn.click();
     }
 
+
+    public List<String> getBasicFieldErrorMessage()
+    {
+
+        List<String> errorMessages = new ArrayList<>();
+        for (WebElement element : basic_Fields_Err_Elmt) {
+            errorMessages.add(element.getText());
+        }
+        return  errorMessages;
+    }
+
+
     //---------------------------------------------Address Tab Handling Methods----------------------------------------------------
 
-    public void clickAddButton() {
-        addBtnElmnt.click();
-    }
 
 
     public void selectAddressType(String addressType) {

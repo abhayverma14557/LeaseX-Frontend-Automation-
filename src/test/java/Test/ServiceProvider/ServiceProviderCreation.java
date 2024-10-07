@@ -288,15 +288,12 @@ public class ServiceProviderCreation extends BaseClass {
                 expected_SubCode_Msg.add("Service Provider Site Code/ID Required");
                 expected_SubCode_Msg.add("Site Bank Required");
                 expected_SubCode_Msg.add("Site Contact Person Required");
-                expected_SubCode_Msg.add("Bank Key (IFSC Code) mf_frm_val_regx_err");
-                expected_SubCode_Msg.add("Bank Account No mf_frm_val_regx_err");
-                expected_SubCode_Msg.add("Branch Name mf_frm_val_regx_err");
-                expected_SubCode_Msg.add("Account Holder Name mf_frm_val_regx_err");
+
                 soft_Assert.assertTrue(expected_SubCode_Msg.containsAll(actual_SubCode_Msg), "SubCode Fields Error Messages Assertion Failed");
             }
-
-            serviceProviderPageObj.clickSubmitBtn();
-
+            else {
+                serviceProviderPageObj.clickSubmitBtn();
+            }
 
             soft_Assert.assertAll();
 

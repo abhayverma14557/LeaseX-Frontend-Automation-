@@ -61,11 +61,12 @@ public class LesseePage extends AbstractComponents {
     @FindBy(xpath = "//li[contains(text(),'Address')]")
     private WebElement addressTab_Btn;
 
+    @FindBy(xpath = "//span[contains(@class,'text-danger')]/div")
+    private List<WebElement> basic_Fields_Err_Elmt;
 
     //-----------------------------------------Address Tab Locators----------------------------------------------------------------
 
-    @FindBy(xpath = "//button[contains(text(),'Add')]")
-    private WebElement addBtnElmnt;
+
 
     @FindBy(xpath = "//select[@formcontrolname='address_type']")
     private WebElement addressTypeElmnt;
@@ -236,6 +237,8 @@ public class LesseePage extends AbstractComponents {
     private WebElement component_Txt_Elmnt;
 
 
+
+
     //--------------------------------------------------Document Step Locators------------------------------------------------
     @FindBy(css = "#file")
     private List<WebElement> document_Uplod_Elmnt;
@@ -243,6 +246,9 @@ public class LesseePage extends AbstractComponents {
     @FindBy(xpath = "//tbody/tr/td[3]")
     private List<WebElement> file_Name_Elmnt;
 
+
+    @FindBy(xpath = "//div/span[@class='text-danger']")
+    private List<WebElement> doc_Err_Msg_Elmnt;
 
     //-----------------------------------------------------Sub Code Mapping Step Locators----------------------------------------------------
 
@@ -354,11 +360,18 @@ public class LesseePage extends AbstractComponents {
         addressTab_Btn.click();
     }
 
+    public List<String> getBasicFieldErrorMessage()
+    {
+
+        List<String> errorMessages = new ArrayList<>();
+        for (WebElement element : basic_Fields_Err_Elmt) {
+            errorMessages.add(element.getText());
+        }
+        return  errorMessages;
+    }
+
     //---------------------------------------Address Fields Starts from Here--------------------------------------------------------
 
-    public void clickAddButton() {
-        addBtnElmnt.click();
-    }
 
 
     public void selectAddressType(String addressType) {
@@ -743,6 +756,14 @@ public class LesseePage extends AbstractComponents {
         return file_Name;
     }
 
+
+    public List<String> getDocumentErrMsg() {
+        List<String> str = new ArrayList<String>();
+        for (WebElement element : doc_Err_Msg_Elmnt) {
+            str.add(element.getText());
+        }
+        return str;
+    }
 
     //------------------------------------------Sub Code Mapping Step Functions--------------------------------------------------------
 

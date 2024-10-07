@@ -79,6 +79,8 @@ public class AbstractComponents {
     @FindBy(xpath = "//li[@data-step-target='step']")
     private List<WebElement> step_Elmnts;
 
+    @FindBy(xpath = "//div[contains(@class,'text-danger')]/div")
+    private List<WebElement> fields_Common_Err_Elmnt;
 
     //Scroll to the Particular Web Element
     public void scrollToElement(WebElement element) {
@@ -352,6 +354,18 @@ public class AbstractComponents {
         }
         waitforInvisiblityoftheElement(spinner_Elmnt, 3);
         return false;
+    }
+
+    public List<String> getFieldsErrMsg()
+
+    {
+        List<String> msgs=new ArrayList<String>();
+        for(WebElement element : fields_Common_Err_Elmnt)
+        {
+            msgs.add(element.getText());
+        }
+        return msgs;
+
     }
 
 

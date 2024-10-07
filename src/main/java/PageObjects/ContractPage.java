@@ -416,7 +416,7 @@ public class ContractPage extends AbstractComponents {
 
 
 
-    public List<String> getFieldsErrMsg() {
+    public List<String> getContactFieldsErrMsg() {
 
         List<String> err_Msgs = new ArrayList<String>();
         for (WebElement element : fields_Err_Elmnt) {

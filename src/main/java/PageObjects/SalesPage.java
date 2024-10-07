@@ -128,9 +128,8 @@ public class SalesPage extends AbstractComponents {
         approve_Btn_Elmnt.click();
     }
 
-    public List<String> getFieldsErrMsg()
+    public List<String> getSalesFieldsErrMsg()
     {
-        System.out.println(fields_Err_Msg_Elmnt.size());
         List <String>msgs = new ArrayList();
         for (WebElement element: fields_Err_Msg_Elmnt)
         {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="LeaseX Login Test Cases Suite" parallel="tests" thread-count="3">
+<suite name="LeaseX Login Test Cases Suite" parallel="methods" thread-count="3" data-provider-thread-count="3" skipfailedinvocationcounts="true">
     <listeners>
         <listener class-name="TestComponents.Listners"/>
     </listeners>
@@ -12,42 +12,6 @@
         </classes>
     </test>
 
-    <!--    <test name="LoginWithoutCompanyCode">-->
-    <!--        <parameter name="test_param" value="LOGIN-002" />-->
-    <!--        <classes>-->
-    <!--            <class name="Test.Login.LoginWithoutCompanyCode"/>-->
-
-    <!--        </classes>-->
-    <!--    </test>-->
-
-
-    <!--    <test name="InvalidCredVerification">-->
-    <!--        <parameter name="test_param" value="LOGIN-003" />-->
-
-    <!--        <classes>-->
-    <!--            <class name="Test.Login.InvalidCredVerification"/>-->
-
-    <!--        </classes>-->
-    <!--    </test>-->
-
-
-    <!--    <test name="PassEncryptDcrpyt">-->
-    <!--        <parameter name="test_param" value="LOGIN-004" />-->
-
-    <!--        <classes>-->
-    <!--            <class name="Test.Login.PassEncryptDecrypt"/>-->
-
-    <!--        </classes>-->
-
-    <!--    </test>-->
-
-
-    <!--    <test name="FieldErrorMsgs">-->
-    <!--        <parameter name="test_param" value="LOGIN-005" />-->
-    <!--          <classes>-->
-    <!--            <class name="Test.Login.FieldErrorMsgs"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
 
 
 </suite>

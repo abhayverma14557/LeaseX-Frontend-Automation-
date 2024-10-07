@@ -53,7 +53,7 @@ public class Listners extends BaseClass implements ITestListener {
 
 
         //-----------Log the Invocation Count and Start Time--------------------------------
-        extentTest.get().log(Status.INFO, "Invocation Count: " + (result.getMethod().getCurrentInvocationCount() + 1));
+//        extentTest.get().log(Status.INFO, "Invocation Count: " + (result.getMethod().getCurrentInvocationCount() + 1));
         extentTest.get().log(Status.INFO, "Test Start Time: " + startTime);
 
 
@@ -112,7 +112,8 @@ public class Listners extends BaseClass implements ITestListener {
             driver = (WebDriver) result.getTestClass().getRealClass().getField("driver")  //Method to get the driver life from the test
                     .get(result.getInstance());
             screeenShotBase = getScreenshot(result.getMethod().getMethodName(), driver);
-            extentTest.get().addScreenCaptureFromBase64String(screeenShotBase, "On " + (iteration_Count) + "th Fail " + result.getMethod().getMethodName());
+//            extentTest.get().addScreenCaptureFromBase64String(screeenShotBase, "On " + (iteration_Count) + "th Fail " + result.getMethod().getMethodName());
+            extentTest.get().addScreenCaptureFromBase64String(screeenShotBase, result.getMethod().getMethodName());
 
 
         } catch (Exception e) {  //Generic Exception for all type of exception
@@ -159,7 +160,7 @@ public class Listners extends BaseClass implements ITestListener {
             driver = (WebDriver) result.getTestClass().getRealClass().getField("driver")  //Method to get the driver life from the test
                     .get(result.getInstance());
             screeenShotBase = getScreenshot(result.getMethod().getMethodName(), driver);
-            extentTest.get().addScreenCaptureFromBase64String(screeenShotBase, "On " + (iteration_Count) + " Skip " + result.getMethod().getMethodName());
+            extentTest.get().addScreenCaptureFromBase64String(screeenShotBase,  result.getMethod().getMethodName());
 
 
         } catch (Exception e) {  //Generic Exception for all type of exception

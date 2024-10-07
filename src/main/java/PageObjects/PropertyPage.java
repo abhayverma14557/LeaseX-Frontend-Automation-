@@ -75,8 +75,7 @@ public class PropertyPage extends AbstractComponents {
     @FindBy(xpath = "//input[@formcontrolname='zip']")
     private WebElement pincode_Field_Elmnt;
 
-    @FindBy(xpath = "//div[contains(@class,'text-danger')]")
-    private List<WebElement> basic_Field_Err_Elmnt;
+
 
 
     //----------------------------------------------Additional Tab Elements----------------------------------------------------
@@ -218,15 +217,7 @@ public class PropertyPage extends AbstractComponents {
         pincode_Field_Elmnt.sendKeys(pincodeField);
     }
 
-public List<String> getFieldsErrMsg()
-{
-    List<String> msgs=new ArrayList<String>();
-    for(WebElement element: basic_Field_Err_Elmnt)
-    {
-        msgs.add(element.getText());
-    }
-    return msgs;
-}
+
 
 
     //-------------------------------------Additional Tab Handling Methods----------------------------------------------

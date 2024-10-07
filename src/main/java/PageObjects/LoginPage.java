@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class LoginPage extends AbstractComponents {
@@ -47,7 +49,7 @@ public class LoginPage extends AbstractComponents {
 
 
     @FindBy(css = ".text-danger")
-    private WebElement error_Msg_Elmnt;
+    private List<WebElement> error_Msg_Elmnt;
 
     @FindBy(css = ".input-group-text")
     private WebElement pass_View_Btn_Elmnt;
@@ -93,13 +95,18 @@ public class LoginPage extends AbstractComponents {
     }
 
     public boolean loginButtonStatus() {
+
         return login_Btn.isEnabled();
     }
 
 
-    public String getErrorMessage() {
-        waitfortheVisibilityofElement(error_Msg_Elmnt, 3);
-        return error_Msg_Elmnt.getText();
+    public List<String> getErrorMessage() {
+        List<String> str = new ArrayList<String>();
+        for (WebElement element : error_Msg_Elmnt) {
+            str.add(element.getText());
+        }
+        return str;
+
     }
 
     public String getpasswordFieldState() {

@@ -1,13 +1,6 @@
-C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Contract\BlankInputInAllocationTab.java
-C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Contract\BlankInputInBasicTab.java
-C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Contract\BlankInputInDepositTab.java
-C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Contract\BlankInputInINDAS116.java
-C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Contract\BlankInputInOtherPayout.java
-C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Contract\BlankInputInTermsConditons.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Contract\ContractCreation.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Demo.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Demo2.java
-C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Invoice.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\LesseeRegistration\LesseeRegistrationFlow.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\LessorRegistration\AddingMulitipleTDS.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\LessorRegistration\BlankInputGstDetails.java
@@ -35,8 +28,6 @@ C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Login\InvalidCre
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Login\LeaseXLogin.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Login\LoginWithoutCompanyCode.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Login\PassEncryptDecrypt.java
-C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\MRNUpload.java
-C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\PoUpload.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Property\PropertyCreation.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\Sales\SalesUpload.java
 C:\Users\abhay.verma\IdeaProjects\MyndLeaseX\src\test\java\Test\ServiceProvider\ServiceProviderCreation.java

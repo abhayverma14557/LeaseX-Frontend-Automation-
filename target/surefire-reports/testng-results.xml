@@ -1,67 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-03T17:22:23 IST" name="Store Test Suite" finished-at="2024-10-03T17:23:54 IST" duration-ms="91887">
+  <suite started-at="2024-10-07T16:26:13 IST" name="Lessor Registration Test Case Suite" finished-at="2024-10-07T16:31:11 IST" duration-ms="298307">
     <groups>
     </groups>
-    <test started-at="2024-10-03T17:22:23 IST" name="Property" finished-at="2024-10-03T17:23:54 IST" duration-ms="91887">
-      <class name="Test.Store.StoreCreationFlow">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Test.Store.StoreCreationFlow@515aebb0]" started-at="2024-10-03T17:22:34 IST" name="launchApplication" finished-at="2024-10-03T17:22:42 IST" duration-ms="7582" status="PASS">
+    <test started-at="2024-10-07T16:26:13 IST" name="LessorRegTestCase1" finished-at="2024-10-07T16:31:11 IST" duration-ms="298307">
+      <class name="Test.LessorRegistration.LessorRegistrationFlow">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Test.LessorRegistration.LessorRegistrationFlow@6d763516]" started-at="2024-10-07T16:26:21 IST" name="launchApplication" finished-at="2024-10-07T16:26:31 IST" duration-ms="9336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createStoreFlow(java.util.HashMap,org.testng.ITestContext)[pri:0, instance:Test.Store.StoreCreationFlow@515aebb0]" started-at="2024-10-03T17:22:42 IST" name="createStoreFlow" data-provider="getData" finished-at="2024-10-03T17:22:59 IST" duration-ms="16835" status="FAIL">
+        <test-method signature="lessorRegistrationFlow(java.util.HashMap,org.testng.ITestContext)[pri:0, instance:Test.LessorRegistration.LessorRegistrationFlow@6d763516]" started-at="2024-10-07T16:26:31 IST" name="lessorRegistrationFlow" data-provider="getData" finished-at="2024-10-07T16:27:53 IST" duration-ms="82765" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{test_Scenario=Verify Lessee Registration with Valid Input, store_CostCenter=TestStoreCenter, company_Code=MNDACNT220005, store_Name=Test Store, userName=sunil.gaur@myndsol.com, test_Name=verify Store creation, property_To_Search=Ashoka Mall, password=Mynd@2022, store_Addrs_Title=Test Address 1, case_Type=Positive, property_To_Approve=Ashoka Mall, store_ErpCode=12312312, portal=Mynd Lease products, property_To_Add=Ashoka Mall, remarks=Test Remarks, test_Id=Store-001, menu_Option=Store}]]>
+                <![CDATA[{gst_Number=29GGGGG1314R9Z6, =null, country=India, lessor_Site_Id=12345676, account_Number=null, edited_Contact_Person_Name=null, payout=null, lessor_Site_Name=null, address_Type2=PROPERTY, msme_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, cheque_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, password=Mynd@2022, address_Type3=SITE, lessor_Email=TestVendor@yopmail.com, TDS_Component=Common Area Maintenance, state=Bihar, portal=Mynd Lease products, gst_State=Bihar, pincode=123456, msme_Registration_Number=UDYAM-XY-07-1234567, bank_Name=null, cin_Number=1234567890, company_Code=MNDACNT220005, account_Holder_Name=null, e_Invoice=true, test_Name=Verify Registration of Lessor, contact_Email=TestVendorNew2@yopmail.com, edited_Mobile_Number=null, pan_Number=BYVPV0861K, address_Line1=Test Address1, address_Line2=Test Address2, test_Id=Lessor_REG-001, menu_Option=Lessor, erp_Code=1234567890, test_Scenario=Verify Bank Tab Fields on Blank Input Tab and Verifying Error Messages, msme_Option= Small , gst_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, city=Patna - Gaya, bank_Branch=null, lessor_Name=Test Vendor, gst_Status=Composition, gst_Country=India, msme_Exp_Date=12-12-2025, bank_Account_Type=null, ifsc_Code=null, lessor_Type=Private Company, userName=sunil.gaur@myndsol.com, TDS_Code=IJ- Sec 194I-Inv.COM-Rent Property 10%, edited_Contact_Email=null, pan_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, address_Type=CORPORATE, case_Type=Negative, mobile_Number=7897891234, contact_Person_Name=Test Contact, remarks=Test Remarks}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@6668ddbf]]>
+                <![CDATA[org.testng.TestRunner@5db03589]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lessorRegistrationFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LessorRegistration.LessorRegistrationFlow@6d763516]" started-at="2024-10-07T16:27:53 IST" name="tearDown" finished-at="2024-10-07T16:27:54 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Test.LessorRegistration.LessorRegistrationFlow@6d763516]" started-at="2024-10-07T16:27:54 IST" name="launchApplication" finished-at="2024-10-07T16:28:01 IST" duration-ms="7107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="lessorRegistrationFlow(java.util.HashMap,org.testng.ITestContext)[pri:0, instance:Test.LessorRegistration.LessorRegistrationFlow@6d763516]" started-at="2024-10-07T16:28:01 IST" name="lessorRegistrationFlow" data-provider="getData" finished-at="2024-10-07T16:29:26 IST" duration-ms="85363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{gst_Number=29GGGGG1314R9Z6, =null, country=India, lessor_Site_Id=null, account_Number=9878978989, edited_Contact_Person_Name=null, payout=MG, lessor_Site_Name=null, address_Type2=PROPERTY, msme_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, cheque_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, password=Mynd@2022, address_Type3=SITE, lessor_Email=TestVendor@yopmail.com, TDS_Component=null, state=Bihar, portal=Mynd Lease products, gst_State=Delhi, pincode=123456, msme_Registration_Number=UDYAM-XY-07-1234567, bank_Name=Bank of India, cin_Number=1234567890, company_Code=MNDACNT220005, account_Holder_Name=*(&*(&*(, e_Invoice=true, test_Name=Verify Registration of Lessor, contact_Email=TestVendorNew2@yopmail.com, edited_Mobile_Number=null, pan_Number=BYVPV0861K, address_Line1=Test Address1, address_Line2=Test Address2, test_Id=Lessor_REG-001, menu_Option=Lessor, erp_Code=1234567890, test_Scenario=Verify Bank Tab Fields on Invalid Input Tab and Verifying Error Messages, msme_Option= Small , gst_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, city=Patna - Gaya, bank_Branch=Mall Road, lessor_Name=Test Vendor, gst_Status=Composition, gst_Country=India, msme_Exp_Date=12-12-2025, bank_Account_Type=Current, ifsc_Code=MAH(*&(*, lessor_Type=Private Company, userName=sunil.gaur@myndsol.com, TDS_Code=null, edited_Contact_Email=null, pan_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, address_Type=CORPORATE, case_Type=Negative, mobile_Number=7897891234, contact_Person_Name=Test Contact, remarks=null}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5db03589]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lessorRegistrationFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LessorRegistration.LessorRegistrationFlow@6d763516]" started-at="2024-10-07T16:29:26 IST" name="tearDown" finished-at="2024-10-07T16:29:26 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Test.LessorRegistration.LessorRegistrationFlow@6d763516]" started-at="2024-10-07T16:29:26 IST" name="launchApplication" finished-at="2024-10-07T16:29:33 IST" duration-ms="6689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="lessorRegistrationFlow(java.util.HashMap,org.testng.ITestContext)[pri:0, instance:Test.LessorRegistration.LessorRegistrationFlow@6d763516]" started-at="2024-10-07T16:29:33 IST" name="lessorRegistrationFlow" data-provider="getData" finished-at="2024-10-07T16:31:11 IST" duration-ms="97779" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{gst_Number=29GGGGG1314R9Z6, =null, country=India, lessor_Site_Id=null, account_Number=57483920121, edited_Contact_Person_Name=null, payout=MG, lessor_Site_Name=null, address_Type2=PROPERTY, msme_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, cheque_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, password=Mynd@2022, address_Type3=SITE, lessor_Email=TestVendor@yopmail.com, TDS_Component=Common Area Maintenance, state=Bihar, portal=Mynd Lease products, gst_State=Delhi, pincode=123456, msme_Registration_Number=UDYAM-XY-07-1234567, bank_Name=Bank of India, cin_Number=1234567890, company_Code=MNDACNT220005, account_Holder_Name=Test Person, e_Invoice=true, test_Name=Verify Registration of Lessor, contact_Email=TestVendorNew2@yopmail.com, edited_Mobile_Number=null, pan_Number=BYVPV0861K, address_Line1=Test Address1, address_Line2=Test Address2, test_Id=Lessor_REG-001, menu_Option=Lessor, erp_Code=1234567890, test_Scenario=Verify TDS Tab Fields on Blank Input Tab and Verifying Error Messages, msme_Option= Small , gst_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, city=Patna - Gaya, bank_Branch=Mall Road, lessor_Name=Bank Details Lessor, gst_Status=Composition, gst_Country=India, msme_Exp_Date=12-12-2025, bank_Account_Type=Current, ifsc_Code=MAHB0012333, lessor_Type=Private Company, userName=sunil.gaur@myndsol.com, TDS_Code=IJ- Sec 194I-Inv.COM-Rent Property 10%, edited_Contact_Email=null, pan_File_Path=\src\main\java\Resources\sample-pan-card-front.jpg, address_Type=CORPORATE, case_Type=Negative, mobile_Number=7897891234, contact_Person_Name=Test Contact, remarks=null}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5db03589]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
-  (Session info: chrome=129.0.6668.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[Expected condition failed: waiting for text ('Data save successfully') to be present in element [[ChromeDriver: chrome on windows (2143436b22b267672411515f4d632758)] -> css selector: #toast-container] (tried for 3 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ccac9b71295e5806856a0d3d32b8f202, getElementText {id=f.DEA2C30F921D5AE809D23326B9145F9D.d.AFBEC54811056F4905DFAFE84A71335C.e.281}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64453/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ccac9b71295e5806856a0d3d32b8f202)] -> xpath: //div[@class='ms-3']/strong]
-Session ID: ccac9b71295e5806856a0d3d32b8f202]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53035}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53035/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2143436b22b267672411515f4d632758]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=129.0.6668.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Data save successfully') to be present in element [[ChromeDriver: chrome on windows (2143436b22b267672411515f4d632758)] -> css selector: #toast-container] (tried for 3 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ccac9b71295e5806856a0d3d32b8f202, getElementText {id=f.DEA2C30F921D5AE809D23326B9145F9D.d.AFBEC54811056F4905DFAFE84A71335C.e.281}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64453/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ccac9b71295e5806856a0d3d32b8f202)] -> xpath: //div[@class='ms-3']/strong]
-Session ID: ccac9b71295e5806856a0d3d32b8f202
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-at PageObjects.StorePage.selectPropertyToApprove(StorePage.java:131)
-at Test.Store.StoreCreationFlow.createStoreFlow(StoreCreationFlow.java:51)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53035}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53035/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2143436b22b267672411515f4d632758
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at CommonFiles.AbstractComponents.waitforTextinElement(AbstractComponents.java:108)
+at CommonFiles.AbstractComponents.getToastMessage(AbstractComponents.java:278)
+at Test.LessorRegistration.LessorRegistrationFlow.lessorRegistrationFlow(LessorRegistrationFlow.java:322)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -80,122 +111,15 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1570)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createStoreFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.Store.StoreCreationFlow@515aebb0]" started-at="2024-10-03T17:22:59 IST" name="tearDown" finished-at="2024-10-03T17:22:59 IST" duration-ms="227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Test.Store.StoreCreationFlow@515aebb0]" started-at="2024-10-03T17:22:59 IST" name="launchApplication" finished-at="2024-10-03T17:23:06 IST" duration-ms="7087" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createStoreFlow(java.util.HashMap,org.testng.ITestContext)[pri:0, instance:Test.Store.StoreCreationFlow@515aebb0]" started-at="2024-10-03T17:23:06 IST" name="createStoreFlow" data-provider="getData" finished-at="2024-10-03T17:23:27 IST" duration-ms="20437" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{test_Scenario=Verify Lessee Registration with Valid Input, store_CostCenter=null, company_Code=MNDACNT220005, store_Name=null, userName=sunil.gaur@myndsol.com, test_Name=verify Store creation, property_To_Search=Ashoka Mall, password=Mynd@2022, store_Addrs_Title=Test Address 1, case_Type=Positive, property_To_Approve=Ashoka Mall, store_ErpCode=null, portal=Mynd Lease products, property_To_Add=Ashoka Mall, remarks=Test Remarks, test_Id=Store-001, menu_Option=Store}]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@6668ddbf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createStoreFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.Store.StoreCreationFlow@515aebb0]" started-at="2024-10-03T17:23:27 IST" name="tearDown" finished-at="2024-10-03T17:23:27 IST" duration-ms="207" status="PASS">
+        </test-method> <!-- lessorRegistrationFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LessorRegistration.LessorRegistrationFlow@6d763516]" started-at="2024-10-07T16:31:11 IST" name="tearDown" finished-at="2024-10-07T16:31:11 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Test.Store.StoreCreationFlow@515aebb0]" started-at="2024-10-03T17:23:27 IST" name="launchApplication" finished-at="2024-10-03T17:23:34 IST" duration-ms="7175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createStoreFlow(java.util.HashMap,org.testng.ITestContext)[pri:0, instance:Test.Store.StoreCreationFlow@515aebb0]" started-at="2024-10-03T17:23:34 IST" name="createStoreFlow" data-provider="getData" finished-at="2024-10-03T17:23:54 IST" duration-ms="19925" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{test_Scenario=Verify Lessee Registration with Valid Input, store_CostCenter=TestStoreCenter, company_Code=MNDACNT220005, store_Name=Test Store, userName=sunil.gaur@myndsol.com, test_Name=verify Store creation, property_To_Search=null, password=Mynd@2022, store_Addrs_Title=Test Address 1, case_Type=Positive, property_To_Approve=null, store_ErpCode=12312312, portal=Mynd Lease products, property_To_Add=null, remarks=Test Remarks, test_Id=Store-001, menu_Option=Store}]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@6668ddbf]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button _ngcontent-ng-cli-universal-c80="" type="button" data-bs-toggle="modal" data-bs-target="#SaveMsg" class="btn btn-primary" style="margin-right: 5px;" disabled="">...</button> is not clickable at point (1418, 601). Other element would receive the click: <div _ngcontent-ng-cli-universal-c80="" class="col-12 py-3">...</div>
-  (Session info: chrome=129.0.6668.70)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ff6af9963d4a816a53418aea4afc2d0b, clickElement {id=f.C1A5BCB6CBE38A72EB0D399387B39C98.d.451F26155D90B292730F4DA16C2748CB.e.239}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64694/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ff6af9963d4a816a53418aea4afc2d0b)] -> xpath: //button[contains(text(),'Associate')]]
-Session ID: ff6af9963d4a816a53418aea4afc2d0b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-ng-cli-universal-c80="" type="button" data-bs-toggle="modal" data-bs-target="#SaveMsg" class="btn btn-primary" style="margin-right: 5px;" disabled="">...</button> is not clickable at point (1418, 601). Other element would receive the click: <div _ngcontent-ng-cli-universal-c80="" class="col-12 py-3">...</div>
-  (Session info: chrome=129.0.6668.70)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ff6af9963d4a816a53418aea4afc2d0b, clickElement {id=f.C1A5BCB6CBE38A72EB0D399387B39C98.d.451F26155D90B292730F4DA16C2748CB.e.239}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\ABHAY~1.VER\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64694/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ff6af9963d4a816a53418aea4afc2d0b)] -> xpath: //button[contains(text(),'Associate')]]
-Session ID: ff6af9963d4a816a53418aea4afc2d0b
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at PageObjects.StorePage.clickAssociateBtn(StorePage.java:124)
-at Test.Store.StoreCreationFlow.createStoreFlow(StoreCreationFlow.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createStoreFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.Store.StoreCreationFlow@515aebb0]" started-at="2024-10-03T17:23:54 IST" name="tearDown" finished-at="2024-10-03T17:23:54 IST" duration-ms="174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Test.Store.StoreCreationFlow -->
-    </test> <!-- Property -->
-  </suite> <!-- Store Test Suite -->
+      </class> <!-- Test.LessorRegistration.LessorRegistrationFlow -->
+    </test> <!-- LessorRegTestCase1 -->
+  </suite> <!-- Lessor Registration Test Case Suite -->
 </testng-results>

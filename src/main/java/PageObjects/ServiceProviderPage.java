@@ -22,8 +22,7 @@ public class ServiceProviderPage extends AbstractComponents {
     }
 
     //---------------------------------------Common Locators----------------------------------------------------------------
-    @FindBy(xpath = "//div[contains(@class,'text-danger')]/div")
-    private List<WebElement> fields_Common_Err_Elmnt;
+
 
     //---------------------------------------Service Provider Locators----------------------------------------------------------------
     @FindBy(css = ".fa.fa-plus")
@@ -212,17 +211,6 @@ public class ServiceProviderPage extends AbstractComponents {
 
     //----------------------------------------Common Locators Handling Methods--------------------------------------------------------------------
 
-    public List<String> getFieldsErrMsg()
-
-    {
-        List<String> msgs=new ArrayList<String>();
-        for(WebElement element : fields_Common_Err_Elmnt)
-        {
-            msgs.add(element.getText());
-        }
-        return msgs;
-
-    }
     //----------------------------------------Service Provider Page Handling Methods--------------------------------------------------------------------
 
 

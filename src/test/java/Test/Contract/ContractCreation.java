@@ -3,11 +3,9 @@ package Test.Contract;
 import PageObjects.ContractPage;
 import PageObjects.DashboardPage;
 import PageObjects.PortalSelectionPage;
-import Test.Login.LeaseXLogin;
 import TestComponents.BaseClass;
 import TestComponents.TestData;
 import org.testng.ITestContext;
-import org.testng.ITestResult;
 import org.testng.annotations.Test;
 
 import java.text.ParseException;
@@ -166,7 +164,7 @@ public class ContractCreation extends BaseClass {
             expected_Allocation_Msg.add("ALLOCATION (%) required");
 
 
-            List<String> actual_Allocation_Msg = contractPageObj.getFieldsErrMsg();
+            List<String> actual_Allocation_Msg = contractPageObj.getContactFieldsErrMsg();
             if (!actual_Allocation_Msg.isEmpty()) {
 
                 soft_Assert.assertTrue(expected_Allocation_Msg.containsAll(actual_Allocation_Msg), "Allocations Fields Error Message are not Correct");
@@ -254,7 +252,7 @@ public class ContractCreation extends BaseClass {
             expected_Otrs_Payout_Msg.add("WHOM TO PAY Required");
 
 
-            List<String> actual_Otrs_Payout_Msg = contractPageObj.getFieldsErrMsg();
+            List<String> actual_Otrs_Payout_Msg = contractPageObj.getContactFieldsErrMsg();
             if (!actual_Otrs_Payout_Msg.isEmpty()) {
 
                 soft_Assert.assertTrue(expected_Otrs_Payout_Msg.containsAll(actual_Otrs_Payout_Msg), "Others Payout Fields Error Message are not Correct");
