@@ -30,8 +30,6 @@ public class ContractPage extends AbstractComponents {
     private WebElement property_Dropdown_Elmnt;
 
 
-
-
     @FindBy(xpath = "//input[@formcontrolname='remarks']")
     private WebElement remarks_Field_Elmnt;
 
@@ -414,8 +412,6 @@ public class ContractPage extends AbstractComponents {
     }
 
 
-
-
     public List<String> getContactFieldsErrMsg() {
 
         List<String> err_Msgs = new ArrayList<String>();
@@ -764,14 +760,13 @@ public class ContractPage extends AbstractComponents {
         lease_Cancellable_Elmnt.sendKeys(cancellable_Date);
 
     }
-    public List<String> getIndasFieldErrMsg()
-    {
-        List< String> msg= new ArrayList<>();
-        for (WebElement element : indas116_Field_Error_Elmnt)
-        {
+
+    public List<String> getIndasFieldErrMsg() {
+        List<String> msg = new ArrayList<>();
+        for (WebElement element : indas116_Field_Error_Elmnt) {
             msg.add(element.getText());
         }
-        return  msg;
+        return msg;
     }
 //-------------------------------------Document Locators Handling Functions----------------------------------------------------------------
 

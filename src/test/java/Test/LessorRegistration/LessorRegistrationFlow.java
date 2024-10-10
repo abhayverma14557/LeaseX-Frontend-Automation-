@@ -295,9 +295,8 @@ public class LessorRegistrationFlow extends BaseClass {
                     lessorPageObj.selectSiteGst(input.get("gst_Number"));
                 }
                 if(input.get("state")!=null) {
-                    lessorPageObj.selectSiteAddress(input.get("state"));
+                    lessorPageObj.selectSiteAddrs(input.get("address_Line1"));
                 }
-                lessorPageObj.selectSiteAddress(input.get("address_Line1") + ",Ramesh Nagar," + input.get("state") + "," + input.get("country"));
                 lessorPageObj.setLessorSiteName(input.get("lessor_Site_Name")!=null?input.get("lessor_Site_Name"):"");
                 lessorPageObj.setLessorSiteID(input.get("lessor_Site_Id")!=null?input.get("lessor_Site_Id"):"");
                 if(input.get("account_Holder_Name")!=null) {
@@ -306,7 +305,10 @@ public class LessorRegistrationFlow extends BaseClass {
                 if(input.get("contact_Person_Name")!=null) {
                     lessorPageObj.selectSiteContPersn(input.get("contact_Person_Name"));
                 }//Coming From Contact Person Details
-
+                if(input.get("payment_Terms")!=null) {
+                    lessorPageObj.selectPaymentTerms(input.get("payment_Terms"));
+                }
+                lessorPageObj.clickSaveButton(1);
                 List<String> actual_SubCode_Msg = lessorPageObj.getFieldsErrMsg();
 
                 if (!actual_SubCode_Msg.isEmpty()) {

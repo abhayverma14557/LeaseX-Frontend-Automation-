@@ -114,6 +114,12 @@ public class AbstractComponents {
         webDriverWait.until(ExpectedConditions.refreshed(ExpectedConditions.attributeContains(element, attribute, attribute_Value)));
     }
 
+    public void waitForDynamicTextLoading(WebElement element, int time, String text)
+    {
+        webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(time));
+        webDriverWait.until(ExpectedConditions.refreshed(ExpectedConditions.textToBePresentInElement(element, text)));
+    }
+
     // Explicit Wait function untill element is not clickable
     public void waitforTheElementtoBeClickable(WebElement element, int time) {
 
@@ -167,9 +173,6 @@ public class AbstractComponents {
         return switch (option.toLowerCase()) {
             case "lessor" -> new LessorPage(driver);
             case "lessee" -> new LesseePage(driver);
-            case "po" -> new PoPage(driver);
-            case "mrn" -> new MrnPage(driver);
-            case "invoice" -> new InvoicePage(driver);
             case "property" -> new PropertyPage(driver);
             case "contract" -> new ContractPage(driver);
             case "store" -> new StorePage(driver);
@@ -232,7 +235,7 @@ public class AbstractComponents {
     }
 
     public void clickAddButton() {
-        waitforInvisiblityoftheElement(spinner_Elmnt, 3);
+        waitforInvisiblityoftheElement(spinner_Elmnt, 2);
         add_Btn.click();
     }
 
@@ -258,8 +261,7 @@ public class AbstractComponents {
         try {
 
             for (WebElement element : element_List) {
-                System.out.println(element.getText());
-                waitfortheVisibilityofElement(element, 2);
+                waitfortheVisibilityofElement(element,3);
                 if (element.getText().contains(option)) {
                     element.click();
                     break;
@@ -305,10 +307,6 @@ public class AbstractComponents {
         extentReports.setSystemInfo("OS", System.getProperty("os.name"));
         extentReports.setSystemInfo("OS Arch", System.getProperty("os.arch"));
         extentReports.setSystemInfo("Environment", "QA");
-//          extentTest.log(Status.PASS, MarkupHelper.createLabel("Test Passed", ExtentColor.GREEN));
-////        extentTest.log(Status.FAIL, MarkupHelper.createLabel("Test Failed", ExtentColor.RED));
-////        extentTest.log(Status.SKIP, MarkupHelper.createLabel("Test Skipped", ExtentColor.BLUE));
-
         return extentReports;
     }
 

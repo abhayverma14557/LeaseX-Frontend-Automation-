@@ -772,9 +772,9 @@ public class LesseePage extends AbstractComponents {
         staticDropdownByVisibleText(gst_Id_Elmnt, site_Gst);
     }
 
-    public void selectSiteAddress(String site_Address) {
+    public void selectSiteAddress(String site_Address) throws InterruptedException {
         site_Add_Elmnt.click();
-
+        Thread.sleep(2000);
         cstmDropDownwithContains(address_Dropdown_options, site_Address);
     }
 
@@ -833,13 +833,6 @@ public class LesseePage extends AbstractComponents {
         return vendor_Names;
     }
 
-    public int totalPages() {
-
-        waitfortheVisibilityofElement(page_Next_Btn, 5);
-        scrollToElement(page_Next_Btn);
-        return num_Of_page.size();
-
-    }
 
     public void clickPageNxtBtn() {
         page_Next_Btn.click();

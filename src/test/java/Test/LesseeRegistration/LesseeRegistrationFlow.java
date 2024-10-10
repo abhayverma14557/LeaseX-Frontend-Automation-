@@ -346,7 +346,7 @@ public class LesseeRegistrationFlow extends BaseClass {
             if (input.get("state") != null) {
                 lesseePageObj.selectSiteAddress(input.get("state"));
             }
-            lesseePageObj.selectSiteAddress(input.get("address_Line1") + ",Ramesh Nagar," + input.get("state") + "," + input.get("country"));
+
             lesseePageObj.setLessorSiteName(input.get("lessee_Site_Name") != null ? input.get("lessee_Site_Name") : "");
             lesseePageObj.setLessorSiteID(input.get("lessee_Site_Id") != null ? input.get("lessee_Site_Id") : "");
 

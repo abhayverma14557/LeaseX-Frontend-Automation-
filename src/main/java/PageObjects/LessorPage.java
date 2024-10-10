@@ -264,6 +264,9 @@ public class LessorPage extends AbstractComponents {
     @FindBy(xpath = "//form/div/div/div[@class='ng-star-inserted']")
     private List<WebElement> subMap_field_Err_Elmnt;
 
+    @FindBy(xpath = "//select[@formcontrolname='invoice_payment_terms']")
+    private WebElement payment_Terms_Elmnt;
+
 
     //Remarks Pop Up Locators
 
@@ -712,9 +715,9 @@ public class LessorPage extends AbstractComponents {
         staticDropdownByVisibleText(gst_Id_Elmnt, site_Gst);
     }
 
-    public void selectSiteAddress(String site_Address) {
+    public void selectSiteAddrs(String site_Address) throws InterruptedException {
         site_Add_Elmnt.click();
-
+        Thread.sleep(2000);
         cstmDropDownwithContains(address_Dropdown_options, site_Address);
     }
 
@@ -736,6 +739,11 @@ public class LessorPage extends AbstractComponents {
         site_Cont_Per_Elmnt.click();
         selectOptionCstmDropDown(dropdown_Option, cont_persn);
 
+    }
+
+    public void selectPaymentTerms(String pay_Terms)
+    {
+        staticDropdownByVisibleText(payment_Terms_Elmnt, pay_Terms);
     }
 
     public void clickSubmitBtn() {
